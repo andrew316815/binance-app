@@ -1,0 +1,95 @@
+{
+  "root": true,
+  "env": {
+      "browser": true,
+      "es2021": true,
+      "node": true
+  },
+  "extends": [
+    "plugin:vue/vue3-recommended",
+    "eslint:recommended",
+    "@vue/typescript/recommended"
+  ],
+  "parserOptions": {
+      "ecmaVersion": 2021
+  },
+  "plugins": [
+  ],
+  "rules": {
+    "quotes": [ "error", "single" ],
+    "semi": [ "error", "never" ],
+    "space-in-parens": [ "error", "always" ],
+    "eol-last": [ "error", "always" ],
+    "no-console": [
+      "error",
+      { "allow": [ "warn" ] }
+    ],
+    "no-var": "error",
+    "no-case-declarations": "off",
+    "import/namespace": "off",
+    "import/no-duplicates": "off",
+    "no-async-promise-executor": "off",
+    "block-spacing": "error",
+    "import/named": "off",
+    "curly": 2,
+    "indent": [ "error", 2, { "SwitchCase": 1 } ],
+    "no-throw-literal": "off",
+    "array-bracket-spacing": [
+      "error",
+      "always",
+      {
+        "singleValue": true,
+        "objectsInArrays": true,
+        "arraysInArrays": true
+      }
+    ],
+    "camelcase": [
+      "error",
+      {
+        "properties": "always"
+      }
+    ],
+    "arrow-spacing": [ "error", { "before": true, "after": true } ],
+    "comma-dangle": [ "error", "always-multiline" ],
+    "comma-spacing": [ "error", { "after": true } ],
+    "object-curly-spacing": [ "error", "always" ],
+    "func-call-spacing": [ "error", "never" ],
+    "computed-property-spacing": [ "error", "always" ],
+    "key-spacing": [ "error", { "afterColon": true, "mode": "strict" } ],
+    "template-curly-spacing": [ "error", "always" ],
+    "keyword-spacing": [ "error", { "before": true, "after": true } ],
+    "operator-assignment": [ "error", "always" ],
+    "func-style": "error",
+    "vue/html-indent": [
+      "error",
+      2,
+      {
+        "attribute": 1,
+        "baseIndent": 1,
+        "closeBracket": 0,
+        "alignAttributesVertically": true
+      }
+    ],
+    "vue/html-closing-bracket-spacing": [
+      "warn",
+      {
+        "startTag": "always",
+        "selfClosingTag": "always"
+      }
+    ],
+    "vue/html-closing-bracket-newline": [
+      "warn",
+      {
+        "singleline": "never",
+        "multiline": "never"
+      }
+    ],
+    "vue/component-name-in-template-casing": [
+      "error",
+      "PascalCase",
+      {
+        "registeredComponentsOnly": false
+      }
+    ]
+  }
+}
