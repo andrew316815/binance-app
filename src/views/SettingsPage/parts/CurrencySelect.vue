@@ -29,7 +29,6 @@ onMounted( () => {
 } )
 
 watch( () => selectedCurrency.value, ( newValue: null | string, oldValue: null | string ) => {
-  console.log( 'test' )
   if ( !appStore.selectedCurrencyPair || oldValue ) {
     emit( 'updateCurrency', newValue )
   }

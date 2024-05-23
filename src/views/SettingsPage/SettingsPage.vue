@@ -13,7 +13,6 @@ import LogsTable from './parts/LogsTable.vue'
 const appStore = useAppStore()
 
 const findOrderBook = async ( currency: string ) => {
-  console.log( 'testdsf' )
   await appStore.getOrderBook( currency )
 }
 </script>
